@@ -14589,64 +14589,66 @@ header.header-full-width.header--sticky.sticky {
   align-items: flex-end;
   gap: 45px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+/* Tablet & Mobile: vertikal anordnen */
+@media only screen and (max-width: 991px) {
   .banner-inner-modern-content {
     align-items: flex-start;
     flex-direction: column;
+    gap: 25px;
   }
 }
-@media only screen and (max-width: 767px) {
-  .banner-inner-modern-content {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-}
+
+/* Titel-Styling */
 .banner-inner-modern-content .title {
-  font-size: 120px;
+  font-size: 72px;              /* deutlich kleiner als 120px */
+  line-height: 1.15;
   margin-bottom: 0;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #0fa958;               /* fallback, falls span-Farben nicht greifen */
 }
+
+/* einzelne Zeilen */
+.banner-inner-modern-content .title span {
+  color: #0fa958;               /* sattes Grün */
+  display: inline-block;
+}
+
+/* responsive Anpassungen */
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .banner-inner-modern-content .title {
-    font-size: 100px;
+    font-size: 60px;
   }
 }
+
 @media only screen and (max-width: 1199px) {
   .banner-inner-modern-content .title {
-    font-size: 80px;
+    font-size: 50px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .banner-inner-modern-content .title {
-    font-size: 43px;
-  }
-  .banner-inner-modern-content .title br {
-    display: none;
-  }
-}
+
 @media only screen and (max-width: 767px) {
   .banner-inner-modern-content .title {
-    font-size: 43px;
+    font-size: 38px;
   }
   .banner-inner-modern-content .title br {
-    display: none;
+    display: none; /* br entfernen für mobile */
   }
 }
-@media only screen and (max-width: 575px) {
-  .banner-inner-modern-content .title {
-    font-size: 36px;
-  }
-}
-.banner-inner-modern-content .title span {
-  color: var(--color-primary);
-}
+
+/* rechte Spalte */
 .banner-inner-modern-content .right-content {
   flex-basis: 35%;
   margin-bottom: 30px;
 }
+
 .banner-inner-modern-content .right-content p.disc {
   color: #fff;
   font-weight: 500;
 }
+
+
 
 .tmp-banner-area-full-width-modern {
   position: relative;
@@ -26979,7 +26981,7 @@ body.tmp-white-version {
   background: #ffffff;
 }
 body.tmp-white-version .bg_modern-banner-bg {
-  background-image: url(../images/bg/06.webp);
+  background-image: url(../images/bg/ich.png);
 }
 body.tmp-white-version .bg_modern-banner-bg::after {
   display: none;
@@ -27321,3 +27323,12 @@ body.tmp-white-version.color-primary-3rd .services-widget.v2 .active-bg {
   color: #3d3d3d !important;
 }
 /*# sourceMappingURL=../maps/style.css.map */
+
+.banner-inner-modern-content .title {
+  font-size: 60px !important;
+  line-height: 1.1;
+  color: #0fa958 !important;
+}
+.banner-inner-modern-content .title span {
+  color: #0fa958 !important;
+}
