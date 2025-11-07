@@ -27333,3 +27333,44 @@ body.tmp-white-version.color-primary-3rd .services-widget.v2 .active-bg {
 .simple-list span::before {
   content: "▸ ";   /* Symbol nach Wunsch: "•", "–", "→", "▹" … */
 }
+
+
+/* Hier ist ein Teil, der das Element in der groesse beschraenkt, weil die AUfzaehlung sonst bloed aussieht*/
+.about-content-area.about-list .text-para-doc-wrap {
+  text-align: center; /* Block mittig im Container */
+}
+
+.about-content-area.about-list h4.text-para-documents {
+  display: block;     /* sorgt dafür, dass sie untereinander stehen */
+  text-align: left;   /* Text bleibt linksbündig */
+  margin: 0 auto;     /* zentriert den Block selbst */
+  font-size: 2.2rem;
+  width: fit-content; /* sorgt für "zentriert, aber nicht über die ganze Breite" */
+}
+
+@media (min-width: 992px) {
+  .about-content-area.about-list h4.text-para-documents {
+    font-size: 2.8rem;
+  }
+}
+
+/* Block br mobil ausbelnden */
+/* Standard: alles ausblenden */
+br.mobile-only,
+br.desktop-only {
+  display: none;
+}
+
+/* Nur auf mobilen Geräten anzeigen */
+@media (max-width: 991px) {
+  br.mobile-only {
+    display: inline;
+  }
+}
+
+/* Nur auf Desktop anzeigen */
+@media (min-width: 992px) {
+  br.desktop-only {
+    display: inline;
+  }
+}
