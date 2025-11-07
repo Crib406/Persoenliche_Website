@@ -25932,6 +25932,14 @@ body.tmp-white-version.index-8 .tmp-contact-about-inner .info-box {
   line-height: 30px;
   margin-bottom: 20px;
 }
+.project-details-area-wrapper .project-details-content-wrap .docsabout {
+  color: var(--color-gray);
+  font-family: var(--font-secondary);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
 
 .check-box-wrap {
   margin-bottom: 45px;
@@ -27398,8 +27406,3 @@ br.desktop-only {
   color: #c23a2b; /* E-Mail-Rot, z. B. Gmail-Ton */
 
 
-
-
-
-
-  
