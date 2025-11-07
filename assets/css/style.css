@@ -27344,7 +27344,7 @@ body.tmp-white-version.color-primary-3rd .services-widget.v2 .active-bg {
   display: block;     /* sorgt dafür, dass sie untereinander stehen */
   text-align: left;   /* Text bleibt linksbündig */
   margin: 0 auto;     /* zentriert den Block selbst */
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   width: fit-content; /* sorgt für "zentriert, aber nicht über die ganze Breite" */
 }
 
@@ -27374,3 +27374,32 @@ br.desktop-only {
     display: inline;
   }
 }
+
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-link {
+  font-size: 3rem; /* Größe der Icons */
+  color: #333;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: #0077b5; /* LinkedIn-Blau */
+  transform: scale(1.1);
+}
+
+.contact-link:first-child:hover {
+  color: #c23a2b; /* E-Mail-Rot, z. B. Gmail-Ton */
+
+
+
+
+
+
+  
