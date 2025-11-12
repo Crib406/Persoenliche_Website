@@ -3,7 +3,7 @@ name: Preview - Feature
 on:
   push:
     branches:
-      - "*feature*"
+      - "*feature/**"
   workflow_dispatch:
 
 permissions:
